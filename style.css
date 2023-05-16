@@ -20,6 +20,7 @@
     --main-color:rgb(195, 229, 242);
     --sun-color: #b7860b;
     --bg-ligth: #ffffff;
+    --bg-tree:#0e4166;
 
 
     /*Typography*/
@@ -178,6 +179,9 @@ header .social-icons{
     z-index: 999;
     display: none;
     line-height: 2rem;
+    color: var(--bg-color);
+  
+    
     
     
     
@@ -185,9 +189,14 @@ header .social-icons{
 }
 .logo-toogle{
    display: flex;
+   position: fixed;
    width: 100%;
    justify-content: center;
-   margin-top: 2rem;  
+   padding-top: 2rem;  
+   z-index: 998;
+   color: var(--bg-color);
+   background: var(--bg-tree);
+   
 }
 
 
@@ -214,6 +223,37 @@ header .social-icons{
     z-index: -1;
   }
   
+  @media only screen and (max-width:991px){
+    .header{
+        left: -250px;
+        
+    }
+    #MenuBtn{
+        display: block;
+    }
+    header nav{
+        margin-top: 2rem;
+    }
+    header .social-icons{
+        padding-top: 2rem;
+    }
+    header .dark-ligth{
+        margin-top: 1rem;
+    }
+    .mobile-nav-active header{
+        left: 0;
+    }
+    
+    
+        
+}
+@media only screen and (min-width:992px){
+    .logo-toogle{
+        display: none;
+    }
+    
+    
+}
 
 /* --------------------- */
 
@@ -222,7 +262,6 @@ header .social-icons{
 main{
     
     display:flex;
-    left: 350px;
     justify-content: center;
     flex-direction: column;
     transition: 0.3s;
@@ -239,6 +278,7 @@ svg {
     background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
 
+
 /* Home Section */
 
 
@@ -253,9 +293,6 @@ svg {
     
     
 }
-
-
-
 
 
 .home-container{
@@ -324,7 +361,19 @@ svg {
     position: relative;
     flex-direction: column;
     height: 100vh;
+    
     background: var(--main-color);
+    
+    
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    
+    
+    
     
 }
 .profile-main{
@@ -336,16 +385,10 @@ svg {
     
     
 }
-.about-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    
-}
+
 .title-about{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
 }
 .subtitle-about{
     font-size: 1.7rem;
@@ -358,45 +401,48 @@ svg {
 
 
 
+/* Main Skills */
+
+.skills-menu{
+    display: flex;
+    margin-left: 300px;
+    width: 100vw;
+    height: 100vh;
+    
+}
 
 
 
 
 
 
-/*Mobile view */
+
+
+
+/*Mobile view Main */
+
+
 
 @media only screen and (max-width:991px){
-    .header{
-        left: -250px;
-        
-    }
-    #MenuBtn{
-        display: block;
-    }
-    header nav{
-        margin-top: 2rem;
-    }
-    header .social-icons{
-        padding-top: 2rem;
-    }
-    header .dark-ligth{
-        margin-top: 1rem;
-    }
-    .mobile-nav-active header{
-        left: 0;
-    }
+    
     main{
-        
-        left: -350px;
+        margin-left: -300px;
     }
     
+    .title-about{
+        font-size: 1.5rem;
+    }
+    .profile-main{
+        width: 100px;
+        height: 100px;
+    }
+    .subtitle-about{
+        
+        font-size: 1.2rem;
+        font-weight: var(--fw-500);
+
+    }
         
 }
-@media only screen and (min-width:992px){
-    .logo-toogle{
-        display: none;
-    }
-    
-    
-}
+
+   
