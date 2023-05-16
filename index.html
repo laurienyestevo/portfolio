@@ -20,36 +20,32 @@
         <nav>
             <ul class="navbar-list">
                 <li>
-                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    <a href="#home" aria-hidden="Link de acesso a area home" class="navbar-link" data-nav-link>Home</a>
                 </li>
                 <li>
-                    <a href="#sobre" class="navbar-link" data-nav-link>Sobre</a>
+                    <a href="#sobre" class="navbar-link" aria-hidden="Link de acesso a area sobre" data-nav-link>Sobre</a>
                 </li>
                 <li>
-                    <a href="#skills" class="navbar-link" data-nav-link>Habilidades</a>
+                    <a href="#skills" class="navbar-link" aria-hidden="Link de acesso a area habilidades" data-nav-link>Habilidades</a>
                 </li>
                 <li>
-                    <a href="#projetos" class="navbar-link" data-nav-link>Projetos</a>
+                    <a href="#projetos" class="navbar-link" aria-hidden="Link de acesso a area projetos" data-nav-link>Projetos</a>
                 </li>
                 <li>
-                    <a href="#contato" class="navbar-link" data-nav-link>Contato</a>
+                    <a href="#contato" class="navbar-link" aria-hidden="Link de acesso a area contato" data-nav-link>Contato</a>
                 </li>
             </ul>
         </nav>
         <div class="container-darkligth">
-            <div class="dark-ligth" data-dark-ligth>
-                <div class="btn-indicator"  data-btn-indicator>
-                    <div class="btn__icon-container" data-icon-container>
-                        <img class="btn-darkligth" src="/img/sun.svg" alt="">
-                    </div>
+            <div >
+                <a class="contraste">Contraste <i class="fa-solid fa-circle-half-stroke"></i></a> 
+             </div>
 
-                </div>
-            </div>
         </div>
         <footer>
             <div class="social-icons">
-                <a href="https://github.com/laurienyestevo/" target="_blank"><img class="bx icon-github" src="img/github-ligth.svg" alt="Logo github branco"></a>
-                <a href="https://www.linkedin.com/in/laurieny-jayne-estevo-0795b9234/" target="_blank"><img class="bx icon-linkedin" src="img/linkedin-ligth.svg" alt=""></a>
+                <a href="https://github.com/laurienyestevo/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/laurieny-jayne-estevo-0795b9234/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </footer>
     </header>
@@ -65,14 +61,65 @@
 
     <main >
         <section id="home">
-            <div class="home-row">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+		<defs>
+			<linearGradient id="bg">
+				<stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+				<stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+				<stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+			</linearGradient>
+			<path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+		</defs>
+		<g>
+			<use xlink:href='#wave' opacity=".3">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="10s"
+          calcMode="spline"
+          values="270 230; -334 180; 270 230"
+          keyTimes="0; .5; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacity=".6">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="8s"
+          calcMode="spline"
+          values="-270 230;243 220;-270 230"
+          keyTimes="0; .6; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacty=".9">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="6s"
+          calcMode="spline"
+          values="0 230;-140 200;0 230"
+          keyTimes="0; .4; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+		</g>
+	</svg>
+            <div class="home-container">
                 <h1 class="title-main"> Laurieny Estevo </h1>
                 <p class="title-sub">Desenvolvedora <span>Full Stack</span></p>
-                <button class="button-home">Saiba mais</button>
+                <button aria-details="Botão direcionando para a area sobre" class="button-home">Saiba mais</button>
             </div>
-            <a href="#sobre" alt="sobre" title="sobre" class="scroll-down-arrow text-white smooth-scroll"><span class="animated"><i class="fa fa-chevron-down"></i></span>
-                <span class="animated"><i class="fa fa-chevron-down"></i></span>
-                <i class="fa fa-chevron-down"></i>
+            
+            <a href="#sobre" alt="sobre" title="sobre" class="scroll-down-arrow text-white smooth-scroll" aria-label="botão de scrool que dá acesso a area sobre">
+                <span class="animated"><i aria-label="botão de scrool que dá acesso a area sobre" class="fa fa-chevron-down" ></i></span>
+                <span  aria-hidden="botão de scrool que dá acesso a area sobre"  class="animated"><i class="fa fa-chevron-down" aria-label="botão de scrool que dá acesso a area sobre"></i></span>  
             </a>
 
         </section>
@@ -81,7 +128,9 @@
             
             <div class="about-container">
             <h1 class="title-about">Sobre Mim</h1>
-            
+            <div class="home-img">
+                <img class="profile-main" src="img/profile-pic.png" alt="Mulher negra de cabelos longos ">
+            </div>
             <p class="subtitle-about">
                 
                Meu nome é <span>Laurieny EStevo</span>  e sou graduanda em Engenharia de Alimentos e estou em transição de carreira para a área de tecnologia. Tive meu primeiro contato com a tecnologia durante um projeto de desenvolvimento de novos produtos, onde utilizei softwares para análise do produto final. </br>
@@ -92,15 +141,80 @@
         </div>
         </section>
     </main>
-        <section class="skills">
-            <h1>Habilidades </h1>
+</section>
+<!-- Experience Section        -->
+<section id="experience" class="no-padding-mobile">
+  <div class="container">
+    <ul class="timeline">
+          <!-- Timeline item-->
+        <li class="timeline-item ml-3 pb-4">
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="h6 mb-0 text-uppercase">Programa Desenvolve - Grupo Boticario</h2>
+                <p class="text-small mb-0">Full Stack Developer</p>
+              </div>
+              <div class="col-lg-7">
+                <p class="text-muted">Programa de formação completa de desenvolvimento web abordando cursos como: <br>
+                    Arquitetura de computadores, Figma, Tipografia, Desing System, responsividade, Git , http, programação orientada a objetos, CRUD, SQL, MySQL, NodeJs, Typescripte React.
+                </p>
+              </div>
+            </div>
+        </li>
+          <!-- Timeline item-->
+        <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="h6 mb-0 text-uppercase">Startese - Tech Academy</h2>
+                <p class="text-small mb-0">Full Stack Developer</p>
+              </div>
+              <div class="col-lg-7">Programa de formação abordando temas como estrutura de dados, hardware, CSS, HTML, JavaScript, POO, SQL e NodeJs.</p>
+              </div>
+            </div>
+        </li>
+          <!-- Timeline item-->
+        <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="h6 mb-0 text-uppercase">Linux Essentials - LinuxTips </h2>
+                <p class="text-small mb-0">Sistema Operacional</p>
+              </div>
+              <div class="col-lg-7">
+                <p class="text-muted">Curso de sistema operacional que aborda tópicos como instalação de software, gerenciamento de arquivos, rede e segurança, além de adquirir habilidades práticas em linha de comando e shell scripting.</p>
+              </div>
+            </div>
+          </li>
+          <!-- Timeline item-->
+        <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="h6 mb-0 text-uppercase">Linux Admin - LinuxTips</h2>
+                <p class="text-small mb-0">Sistema Operacional</p>
+              </div>
+              <div class="col-lg-7">
+                <p class="text-muted">Treinamento que possui o objetivo de preparar estudantes e profissionais Linux para trabalhar de forma eficiente no mercado de trabalho. O curso inclui a cobertura de tópicos fundamentais, como gerenciamento de pacotes, gerenciamento de arquivos, permissões de arquivos e diretórios, configuração de rede, gerenciamento de serviços, shell scripting, entre outros.</p>
+              </div>
+            </div>
+          </li>
+          <!-- Timeline item-->
+          <li class="timeline-item ml-3 pb-4">
+            <div class="timeline-arrow"></div>
+            <div class="row no-gutter">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="h6 mb-0 text-uppercase">AWS - LinuxTips</h2>
+                <p class="text-small mb-0">Sistema Operacional</p>
+              </div>
+              <div class="col-lg-7">
+                <p class="text-muted">O treinamento AWS Expert aborda  serviços em nuvem que abrangem desde o armazenamento de dados, a computação, a análise de dados, obtendo conhecimento para implementar e administrar ambientes complexos utilizando produtos da AWS como o CloudFormation ou o DynamoDB.</p>
+              </div>
+            </div>
+          </li>
+                  </ul>
+  </div>
+</section>
 
-           <p></p> 
-        </section>
-
-</div>
-<canvas id="balls-canvas"></canvas>
-</div>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
 </body>
