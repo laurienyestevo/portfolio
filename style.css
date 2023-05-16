@@ -100,7 +100,7 @@ header nav ul li a{
     padding: 1rem 1rem;
     margin: 0.4rem ;
     color: var(--text-color);
-    font-weight: var(--fw-400);
+    font-weight: var(--fw-600);
     font-size: 1.6rem;
     letter-spacing: 1.7px;
     
@@ -265,6 +265,13 @@ main{
     justify-content: center;
     flex-direction: column;
     transition: 0.3s;
+    width: 100%;
+    background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    
 }
 svg {
     position: absolute;
@@ -362,8 +369,6 @@ svg {
     flex-direction: column;
     height: 100vh;
     
-    background: var(--main-color);
-    
     
 }
 .about-container{
@@ -397,18 +402,24 @@ svg {
     padding: 2rem;
     font-weight: var(--fw-500);
 }
+.subtitle-about span {
+    color: #4381d1;
+    font-weight: 700;
+    
+}
 
 
 
 
 /* Main Skills */
 
-.skills-menu{
+#skills{
     display: flex;
     margin-left: 300px;
     width: 100vw;
     height: 100vh;
-    
+    margin-left: 300px;
+
 }
 
 
