@@ -282,6 +282,7 @@ main{
 /* Home Section */
 
 #home{
+    background-image: url('/img/snow-4726119_1920.jpg');
     height: 100vh;
     width: 100%;
     display: flex;
@@ -311,6 +312,42 @@ main{
 .home-row .title-sub{
     font-size:2rem ;
 }
+
+.scroll-down-arrow {
+    position: absolute;
+    z-index: 3;
+    bottom: 60px;
+    left: 55%;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .scroll-down-arrow .animated {
+    position: relative;
+    animation: fadeInDown 1.5s infinite;
+    -webkit-animation: fadeInDown 1.5s infinite;
+    -moz-animation: fadeInDown 1.5s infinite;
+    -o-animation: fadeInDown 1.5s infinite;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      top: -25px;
+      opacity: 0;
+    }
+    100% {
+      top: 5px;
+      opacity: 1;
+    }
+  }
+  /*== Heading Separator Line ==*/
+  .heading-separator-line {
+    width: 80px;
+  }
 
 
 /* About */
