@@ -56,7 +56,7 @@ body{
 }
 
 .header{
-    height: 100vh;
+    height: 100%;
     width: 250px;
     padding: 15px 30px;
     background: var(--second-bg-color);
@@ -71,7 +71,7 @@ body{
 
 header .profile{
     text-align: center;
-    margin: 0.62rem 0;
+    margin: 5rem 0;
 }
 
 header .profile img{
@@ -208,9 +208,6 @@ header .social-icons{
 }
 
 
-
-
-
 .container {
     position: relative;
   }
@@ -266,8 +263,8 @@ main{
     flex-direction: column;
     transition: 0.3s;
     width: 100%;
-    background: #2980B9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #3f8ac6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #63c3e6, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
@@ -397,14 +394,15 @@ svg {
 }
 .subtitle-about{
     font-size: 1.7rem;
-    line-height: 2.7rem;
+    line-height:3rem;
     text-align: center;
-    padding: 2rem;
-    font-weight: var(--fw-500);
+    padding: 2.5rem;
+    font-weight: var(--fw-600);
 }
 .subtitle-about span {
-    color: #4381d1;
+    color: #235fae;
     font-weight: 700;
+    font-size: 2.7;
     
 }
 
@@ -415,14 +413,29 @@ svg {
 
 #skills{
     display: flex;
-    margin-left: 300px;
     width: 100vw;
     height: 100vh;
-    margin-left: 300px;
+    
 
 }
+.container-skills{
+    margin-left: 300px;
+}
+.container-skills h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+}
+.container-skills h3{
+    font-size: 3rem;
+    color: var(--bg-tree);
+    padding-bottom: 2rem;
+}
 
-
+.timeline{
+    width: 70%;
+    word-break: break-all;
+}
 
 
 
@@ -436,9 +449,7 @@ svg {
 
 @media only screen and (max-width:991px){
     
-    main{
-        margin-left: -300px;
-    }
+    
     
     .title-about{
         font-size: 1.5rem;
@@ -453,6 +464,16 @@ svg {
         font-weight: var(--fw-500);
 
     }
+
+
+
+    .about-container{
+        margin-left: -250px ;
+    }
+    .container-skills{
+        margin-left: -250px;
+    }
+
         
 }
 
