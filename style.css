@@ -263,10 +263,10 @@ main{
     flex-direction: column;
     transition: 0.3s;
     width: 100%;
-    background: #3f8ac6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #63c3e6, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
     
 }
@@ -324,7 +324,7 @@ svg {
     position: absolute;
     z-index: 3;
     bottom: 60px;
-    left: 55%;
+    left: 60%;
     margin-left: -16px;
     width: 22px;
     height: 22px;
@@ -410,32 +410,152 @@ svg {
 
 
 /* Main Skills */
-
-#skills{
+.timeline-title{
+    margin-left: 300px;
+    position: relative;
+    font-size: 30px;
+    color: #081b29;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    justify-content: center;
+    padding-bottom: 5rem;
     
-
 }
-.container-skills{
+.timeline{
     margin-left: 300px;
 }
-.container-skills h1{
-    font-size: 3rem;
-    text-align: center;
-    padding: 5rem;
-}
-.container-skills h3{
-    font-size: 3rem;
-    color: var(--bg-tree);
-    padding-bottom: 2rem;
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
 }
 
-.timeline{
-    width: 70%;
-    word-break: break-all;
+.timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    background: #eee;
 }
+
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline ul li div time {
+    position: absolute;
+    background: #f5af19;
+    width: 80px;
+    height: 30px;
+    top: -15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.timeline ul li div div {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline ul li div div p {
+    text-align: center;
+}
+
+.timeline ul li div .discovery {
+    margin-right: 10px;
+}
+
+.timeline ul li:nth-of-type(odd)>div {
+    left: 45px;
+}
+
+.timeline ul li:nth-of-type(even)>div {
+    left: -439px;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-of-type(odd) div {
+    transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+
+.timeline ul li:nth-of-type(even) div {
+    transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .timeline-title{
+        margin-left: -300px;
+        font-size: 16px;
+    }
+    .timeline{
+        margin-left: -300px;
+    }
+
+    .timeline ul li div {
+        width: 250px;
+        flex-direction: column;
+    }
+
+    .timeline ul li div div {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .timeline ul li:nth-of-type(even)>div {
+        left: -289px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   
+
+    .timeline ul li {
+        margin-left: 20px;
+    }
+
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+
+    .timeline ul li:nth-of-type(even)>div {
+        left: 45px;
+    }
+}
+
+
+
 
 
 
@@ -468,10 +588,10 @@ svg {
 
 
     .about-container{
-        margin-left: -250px ;
+        margin-left: -300px ;
     }
     .container-skills{
-        margin-left: -250px;
+        margin-left: -300px;
     }
 
         
