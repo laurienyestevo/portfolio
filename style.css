@@ -263,9 +263,9 @@ main{
     flex-direction: column;
     transition: 0.3s;
     width: 100%;
-    background: #9CECFB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #83a4d4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 
     
@@ -278,8 +278,8 @@ svg {
     height: 100%;
     box-sizing: border-box;
     display: block;
-    background-color: #244d6b;
-    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+    background-color: #8db5d2;
+    background-image: linear-gradient(to bottom, rgb(186 220 245 / 86%), #0e2366)
 }
 
 
@@ -411,6 +411,7 @@ svg {
 
 /* Main Skills */
 .timeline-title{
+    padding-top: 7rem;
     margin-left: 300px;
     position: relative;
     font-size: 30px;
