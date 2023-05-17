@@ -516,12 +516,13 @@ svg {
 
 @media screen and (max-width: 900px) {
     .timeline-title{
-        margin-left: -300px;
         font-size: 16px;
+        margin-left: -300px;
     }
     .timeline{
         margin-left: -300px;
     }
+    
 
     .timeline ul li div {
         width: 250px;
