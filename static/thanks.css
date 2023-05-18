@@ -91,6 +91,7 @@ body {
     align-items: center;
     flex-direction: column;
     
+    
 }
 
 .container img{
@@ -107,6 +108,19 @@ body {
 }
 .container h3{
     z-index: 100;
-    font-size: 5rem;
+    font-size: 4rem;
     
 }
+
+@media (max-width: 800px){
+    .container img{
+        width: 100px;
+    }
+    .container h1{
+        font-size: 1rem;
+    }
+    .container h3 {
+        font-size: 2rem;
+    }
+}
+    
