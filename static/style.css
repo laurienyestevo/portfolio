@@ -62,7 +62,7 @@ body {
   align-items: center;
   color: #a8a9b4;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .nav-menu a i,
@@ -110,7 +110,7 @@ section#inicio {
 }
 
 section#inicio h2 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 section#inicio span#subtitle {
