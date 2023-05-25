@@ -88,7 +88,7 @@ body {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 250px;
 }
 svg {
   position: absolute;
@@ -159,7 +159,7 @@ i.menu-mobile {
 
 @media (max-width: 1024px) {
   #header {
-    left: -300px;
+    left: -250px;
   }
   i.menu-mobile{
     display: flex;
