@@ -55,8 +55,3 @@ btnEnviar.addEventListener("click", ()=>{
   btnEnviar.style.display = "none"
 })
 
-// Tira a mensagem de sucesso depois de 5 segundos
-
-setTimeout(() => {
-  document.querySelector('#alerta').style.display = 'none';
-}, 5000)
