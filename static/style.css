@@ -14,7 +14,7 @@ body {
   bottom: 0;
   background: #021124;
   overflow-y: auto;
-  width: 300px;
+  width: 250px;
   transition: all ease-in-out 0.5s;
   padding: 0 15px;
   z-index: 9997;
