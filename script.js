@@ -51,7 +51,13 @@ window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
 
+const btnEnviar = document.querySelector('#button-form')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
 
+btnEnviar.addEventListener("click", ()=>{
+  btnEnviarLoader.style.display = "block";
+  btnEnviar.style.display = "none"
+})
 
 
 

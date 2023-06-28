@@ -312,28 +312,35 @@
                 </div>
             </div> 
         </section>
-        <section id="contato">
+        <form id="contato" action='https://formsubmit.co/lauryyestevo@gmail.com' method="POST">
             <h1 class="title">Contato</h1>
             <div class="form-container">
                 <form id="contact-form">
                   <div class="form-group">
-                    <label for="name" aria-required="true">Nome:</label>
+                    <label for="name" >Nome:</label>
                     <input type="text" id="name" name="name" required>
                   </div>
                   <div class="form-group">
-                    <label for="email" aria-required="true">E-mail:</label>
+                    <label for="email" >E-mail:</label>
                     <input type="email" id="email" name="email" required>
                   </div>
                   <div class="form-group">
-                    <label for="message" aria-required="true">Mensagem:</label>
+                    <label for="message" >Mensagem:</label>
                     <textarea id="message" name="message" required></textarea>
                   </div>
                   <div class="form-group">
-                    <button class="button-form" type="submit">Enviar</button>
-                  </div>
+                    <button id="button-form" class="btn btn-primary" type="submit">Enviar</button>
+                    <button aria-label="Botão de enviar" id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                        <span role="status"
+                            aria-hidden="true"></span>
+                        Enviando...
+                        <input type="hidden" name="_next" value="https://laurienyestevo.github.io/portfolio/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </button>
+                </div>
                 </form>
               </div>
-        </section>
+            </form>
 
         
 </div>

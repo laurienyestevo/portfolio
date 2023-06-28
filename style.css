@@ -872,6 +872,9 @@ h2{
   .button-form{
     margin: 0 auto;
   }
+  #btn-enviar-loader{
+    display: none;
+  }
 
 @media (max-width: 900px) {
     #contato{
